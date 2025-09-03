@@ -1,15 +1,16 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { INITIAL_STATE } from "./constant.ts";
-import type { RootState } from "../store.ts";
-import type { TSelectGoals } from "../../types/apiResponse.ts";
+import { createSlice } from '@reduxjs/toolkit';
+
+import type { TSelectGoals } from '../../types/apiResponse.ts';
+import type { RootState } from '../store.ts';
+import { INITIAL_STATE } from './constant.ts';
 
 /**
  * Reducer
  */
 const { reducer, actions } = createSlice({
-  name: "goals",
+  name: 'goals',
   initialState: INITIAL_STATE,
-  reducers: {},
+  reducers: {}
 });
 
 export default reducer;
